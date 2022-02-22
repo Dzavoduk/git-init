@@ -1,0 +1,61 @@
+@import "src/styles/settings/app.colors.style";
+@import "src/styles/settings/app.settings.style";
+@import "src/styles/layout/app.container.style";
+@import "src/styles/elements/burger-menu-btn";
+
+.logo__speaker-nav {
+  background-color: $dark;
+  display: grid;
+  grid-template-columns: 1fr 600px 200px;
+
+  @media (max-width: 768px) {
+    background-color: $dark-night;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .general__header {
+      background-color: $dark-night;
+    }
+
+    .nav {
+      display: flex;
+    }
+
+    .btn {
+      grid-area: btn;
+      display: none;
+    }
+    .speaker__logo {
+      margin: 25px;
+    }
+  }
+
+}
+.nav__button {
+  font-family: $general-font;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-16;
+  line-height: $line-height-20;
+  text-transform: capitalize;
+  color: $light;
+  margin-top: 0;
+}
+.nav {
+  margin: 30px;
+  margin-left: 200px;
+}
+.speaker__logo {
+  margin: 25px 0 0 60px;
+}
+.btn {
+  margin: 5px;
+  width: 150px;
+}
+a{
+  margin: 25px;
+  color: $light;
+  text-decoration: none;
+}
+
+

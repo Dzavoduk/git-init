@@ -1,0 +1,31 @@
+@import "src/styles/settings/app.colors.style";
+@import "src/styles/settings/app.settings.style";
+
+.block3-title-info-2 {
+
+  @media (max-width: 768px) {
+    background-color: $dark-night;
+    display: grid;
+    justify-items: end;
+    grid-template-columns:  1fr;
+    grid-template-areas: "img__block3_img2"
+                            "block3-titlle-info-2-text";
+  }
+  .block3-titlle-info-2-text{
+    grid-area: block3-titlle-info-2-text;
+    justify-items: end;
+
+
+  }
+  .img__block3_img2 {
+    grid-area: img__block3_img2;
+    width: 95%;
+
+
+  }
+  .block-titlle-info-2_img {
+    width: 92%;
+ justify-items: start
+  }
+}
+

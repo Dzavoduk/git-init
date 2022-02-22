@@ -1,0 +1,31 @@
+@import "src/styles/settings/app.colors.style";
+@import "src/styles/settings/app.settings.style";
+
+.btn {
+  padding: 8px 30px;
+  display: inline-block;
+  vertical-align: top;
+  color: $dark;
+  border: 3px solid transparent;
+  font-size: $font-size-14;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .1s linear, color .1s linear;
+
+  &_bordered-light {
+    border-color: $border-light;
+
+    &:hover {
+      background-color: rgba(68, 67, 67, 0.589);
+      color: rgb(252, 252, 252);
+      border: 3px solid rgba(68, 67, 67, 0.589);
+    }
+  }
+
+  &_dark {
+    border-color: rgb(0, 0, 0);
+    background-color: $background-dark;
+    color: $text-lighter;
+  }
+}

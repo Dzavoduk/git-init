@@ -1,0 +1,103 @@
+@import "src/styles/settings/app.colors.style";
+@import "src/styles/settings/app.settings.style";
+@import "src/styles/elements/buttons";
+
+.block__ability {
+  display: grid;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  grid-template-columns:  1fr 1fr;
+  grid-template-areas: "ability-title ability-img"
+                        "ability-paragraph ability-img";
+
+  @media (max-width: 768px) {
+    background-color: $light;
+    display: grid;
+    margin-top: -120px;
+    grid-template-columns:  1fr;
+    grid-template-areas: "ability-title"
+                          "ability-img"
+                          "ability-paragraph";
+  }
+
+
+    .ability-title {
+      grid-area: ability-title;
+      width: 100%;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+          //
+      }
+    }
+
+    .ability-paragraph {
+      grid-area: ability-paragraph;
+      width: 100%;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+        //
+      }
+    }
+
+    .ability-img {
+      grid-area: ability-img;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+
+  .ability-img_picture {
+    width: 600px;
+  }
+
+  .ability-title {
+    font-family: $general-font;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-24;
+    line-height: $line-height-28;
+    text-transform: uppercase;
+    color: $gray-darknight;
+    margin-top: 40px;
+    width: 300px;
+  }
+
+  .ability-paragraph {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-16;
+    line-height: $line-height-28;
+    color: $gray-dark;
+    width: 400px;
+
+    @media (max-width: 768px) {
+      width: 600px;
+    }
+  }
+
+  .ability {
+    width: 363px;
+    height: 282px;
+    margin-right: 50px;
+  }
+  .btn1 {
+    margin: 0 220px 0 -40px;
+
+    @media (max-width: 768px) {
+      margin: 0 420px 0 -40px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

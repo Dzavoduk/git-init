@@ -1,0 +1,138 @@
+@import "src/styles/settings/app.colors.style";
+@import "src/styles/settings/app.settings.style";
+
+.footer {
+  background-color: $dark-night;
+
+  @media (max-width: 768px) {
+  .footer__tittle {
+    width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+    .copyright {
+      text-align: center;
+    }
+
+    .footer-tittle_img {
+      margin: 40px;
+    }
+    .footer-social-facebook {
+      background: url("assets/img-adpt/footer-facebook.png") no-repeat;
+    }
+
+      .footer-social-instagram {
+        background: url("assets/img-adpt/footer-insta.png") no-repeat;
+      }
+
+    .footer-social_img {
+        color: transparent;
+      }
+    .footer-list_copyright {
+      display: flex;
+      flex-wrap: wrap;
+      height: 90px;
+
+    }
+  }
+}
+.footer__list-grid {
+  display: grid;
+  grid-template-columns: 180px 180px 180px;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: $general-font;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-16;
+  line-height: $line-height-20;
+  text-transform: capitalize;
+  color: $gray-dark;
+
+  &_first-word {
+    color: $lighter;
+  }
+
+  &_column {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+.footer__tittle {
+  display: flex;
+  justify-content: center;
+  &_text {
+    font-family: $general-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size-72;
+    line-height: $line-height-80;
+    text-transform: capitalize;
+    color: $lighter;
+    display: flex;
+    justify-content: center;
+    padding-top: 137px;
+
+    &_about-text {
+      font-family: $general-font;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-16;
+      line-height: $line-height-28;
+      text-align: center;
+      color: $lighter;
+
+      &_img {
+        font-size: $font-size-30;
+        font-weight: $font-weight-bold;
+        color: $light;
+        margin-top: 200px;
+      }
+    }
+  }
+}
+.btn1 {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+.copyright{
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  font-family: $general-font;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-16;
+  line-height: $line-height-20;
+  text-transform: uppercase;
+  color: $light;
+  margin-bottom: 40px;
+}
+
+.footer__tittle_about-text {
+  font-family: $general-font;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-16;
+  line-height: $line-height-28;
+  text-align: center;
+  width: 386px;
+  height: 49px;
+  color: $light;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

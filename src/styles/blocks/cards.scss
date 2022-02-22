@@ -1,0 +1,59 @@
+@import "src/styles/settings/app.colors.style";
+@import "src/styles/settings/app.settings.style";
+
+.all-block-info {
+  background-color: $dark-night;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    background-color: $dark-night;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.card__item-text{
+  text-align: center;
+  }
+}
+card__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__item-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-16;
+  line-height: $line-height-22;
+  text-transform: uppercase;
+  color: $light;
+  margin-top: 100px;
+
+  &_paragraph {
+    text-transform: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-16;
+    line-height: 180%;
+    color: $light;
+    width: 282px;
+    height: 100px;
+    margin: 0 auto;
+  }
+}
+.card__item_img {
+  display: flex;
+  justify-content: center;
+  background-color: $dark-night;
+  padding: 20px;
+}
+
+

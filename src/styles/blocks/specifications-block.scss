@@ -1,0 +1,62 @@
+@import "src/styles/settings/app.colors.style";
+@import "src/styles/settings/app.settings.style";
+
+.specifications-block {
+  display: grid;
+  grid-template-columns: 1fr 300px 300px;
+  margin-top: 100px;
+  background-color: $light;
+  padding: 30px;
+  font-family: $general-font;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-18;
+  line-height: $line-height-18;
+  color: $gray-darknight;
+
+  @media (max-width: 768px) {
+    background-color: $light;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-rows: 400px 200px;
+    grid-template-columns:  300px 300px;
+    grid-template-areas: "specifications-block_column-2 specifications-block_column-1"
+                            ;
+
+    .specifications-block_column-2 {
+      grid-area: specifications-block_column-2;
+      background: url("/assets/img-adpt/boombox-4-adpt.png") ;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+
+    .specifications__img_boombox4 {
+      display:none;
+    }
+
+    .specifications-block_column-1 {
+      grid-area: specifications-block_column-1;
+    }
+  }
+
+}
+.specifications-block_column-1 {
+  margin: 50px;
+}
+
+.specifications__img_boombox4 {
+  border-radius: 360px;
+
+}
+.specifications-block_titlle {
+  font-family: $general-font;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-24;
+  line-height: $line-height-28;
+  text-transform: uppercase;
+  color: $gray-darknight;
+}
+
